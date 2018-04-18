@@ -1,0 +1,21 @@
+BEGIN{
+	count=0
+	oscountma201=0
+	oscounths200=0
+	oscountcs201=0
+	oscountcs203=0
+	oscountcs205=0
+	oscountcs207=0
+	oscountcs231=0
+	oscountcs233=0
+     }
+	{count++}
+   	/MA201\(OS\)/{oscountma201++}
+	/HS200\(OS\)/{oscounths200++}
+	/CS201\(OS\)/{oscountcs201++}
+        /CS203\(OS\)/{oscountcs203++}
+	/CS205\(OS\)/{oscountcs205++}
+	/CS207\(OS\)/{oscountcs207++}
+	/CS231\(OS\)/{oscountcs231++}
+	/CS233\(OS\)/{oscountcs233++}
+	
